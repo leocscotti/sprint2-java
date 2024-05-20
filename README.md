@@ -77,6 +77,8 @@ Body:
 ```json
 {
     "nome": "Exemplo",
+}
+```
 
 | Parâmetro | Tipo     | Descrição                          |
 |:----------|:---------|:-----------------------------------|
@@ -172,6 +174,84 @@ Body:
 |:----------|:-------|:----------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id da empresa a ser excluído |
 
+
+#### Obter todas as ias (findAll iaDTO)
+
+```http
+  GET /ias
+```
+
+#### Obter ia por id (findById iaDTO)
+
+```http
+  GET /ias/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                    |
+|:----------|:-------|:---------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da ia a ser buscado |
+
+#### Gravar ia (save)
+
+```http
+  POST /ias
+```
+
+Body:
+
+```json
+{
+    "tipo": "generativa",
+    "descricao": "ia para gerar dados",
+    "acuracia": "87%",
+    "situacao": "ativa"
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `tipo`    | `String` | Tipo da ia a ser gravado   |
+| `descricao`   | `String` | Descricao da ia a ser gravada |
+| `acuracia`   | `String` | Acuracia da ia a ser gravada  |
+| `situacao` | `String` | Situacao da ia a ser gravada |
+
+#### Atualizar ia (update)
+
+```http
+  PUT /ias/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                       |
+|:----------|:-------|:------------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da ia a ser atualizado |
+
+Body:
+
+```json
+{
+    "tipo": "generativa",
+    "descricao": "ia para gerar dados",
+    "acuracia": "87%",
+    "situacao": "ativa"
+}
+```
+
+| Parâmetro | Tipo     | Descrição                          |
+|:----------|:---------|:-----------------------------------|
+| `tipo`    | `String` | Tipo da ia a ser gravado   |
+| `descricao`   | `String` | Descricao da ia a ser gravada |
+| `acuracia`   | `String` | Acuracia da ia a ser gravada  |
+| `situacao` | `String` | Situacao da ia a ser gravada |
+
+#### Excluir empresa (delete)
+
+```http
+  DELETE /ias/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                     |
+|:----------|:-------|:----------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da ia a ser excluída |
 
 ## Link para o vídeo explicativo da solução 
 https://youtu.be/yR397qCfDAc
