@@ -12,10 +12,10 @@ Responsável por desenvolver o banco de dados e o script da IA usando Machine Le
 Enzo Ross Gallone- RM551754
 Responsável por desenvolver a aplicação em mobile
 
-Vinicius de Araujo Camargo- RM
+Vinicius de Araujo Camargo- RM99494
 Responsável por desenvolver os serviços de devops e Cloud computing
 
-Pedro Gomes Fernandes- RM
+Pedro Gomes Fernandes- RM551480
 Responsável pela arquitetura do projeto em Compliance e Governança
 
 # Diagrama de entidades de relacionamento 
