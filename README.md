@@ -1,7 +1,7 @@
 ﻿# VisionaryAI
  Projeto para o challenge
 
-# Integrantes
+## Integrantes
 
 Leonardo Cordeiro Scotti- RM550769
 Responsável por desenvolver aplicação backend em c# e java
@@ -18,5 +18,160 @@ Responsável por desenvolver os serviços de devops e Cloud computing
 Pedro Gomes Fernandes- RM551480
 Responsável pela arquitetura do projeto em Compliance e Governança
 
-# Diagrama de entidades de relacionamento 
+## Diagrama de entidades de relacionamento 
 ![image](https://github.com/leocscotti/sprint2-java/assets/126523762/0372450b-8d7d-4ce2-8622-a5a997f231b0)
+
+## Como rodar a aplicação
+Ao importar o projeto e abri-lo no seu editor de código, rodar a classe "VisionaryAiApplication", cuja é a classe responsável por colocar o projeto no ar.
+Após essa etapa, testar os endpoints fornecidos abaixo no Postman ou Insomnia
+
+## Documentação da API e listagem dos endpoints
+
+#### Obter todos os clientes (findAll clienteDTO)
+
+```http
+  GET /clientes
+```
+
+#### Obter cliente por id (findById clienteDTO)
+
+```http
+  GET /clientes/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                    |
+|:----------|:-------|:---------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id do cliente a ser buscado |
+
+#### Gravar cliente (save)
+
+```http
+  POST /clientes
+```
+
+Body:
+
+```json
+{
+    "nome": "Exemplo",
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `nome`    | `String` | Nome do cliente a ser gravado   |
+
+
+#### Atualizar cliente (update)
+
+```http
+  PUT /clientes/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                       |
+|:----------|:-------|:------------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id do cliente a ser atualizado |
+
+Body:
+
+```json
+{
+    "nome": "Exemplo",
+
+| Parâmetro | Tipo     | Descrição                          |
+|:----------|:---------|:-----------------------------------|
+| `nome`    | `String` | Nome do cliente a ser atualizado   |
+
+#### Excluir cliente (delete)
+
+```http
+  DELETE /clientes/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                     |
+|:----------|:-------|:----------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id do cliente a ser excluído |
+
+
+
+#### Obter todas as empresas (findAll empresaDTO)
+
+```http
+  GET /empresas
+```
+
+#### Obter empresa por id (findById empresaDTO)
+
+```http
+  GET /empresas/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                    |
+|:----------|:-------|:---------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da empresa a ser buscado |
+
+#### Gravar empresa (save)
+
+```http
+  POST /empresas
+```
+
+Body:
+
+```json
+{
+    "cnpj": "12345678912345",
+    "email": "exemplo@email.com",
+    "nome": "Exemplo",
+    "situacao": "ativa"
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `cnpj`    | `String` | Cnpj da empresa a ser gravado   |
+| `email`   | `String` | E-mail da empresa a ser gravado |
+| `nome`   | `String` | Nome da empresa a ser gravado  |
+| `situacao` | `String` | Situacao da empresa a ser gravado |
+
+#### Atualizar empresa (update)
+
+```http
+  PUT /empresas/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                       |
+|:----------|:-------|:------------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da empresa a ser atualizado |
+
+Body:
+
+```json
+{
+    "cnpj": "12345678912345",
+    "email": "exemplo@email.com",
+    "nome": "Exemplo",
+    "situacao": "ativa"
+}
+```
+
+| Parâmetro | Tipo     | Descrição                          |
+|:----------|:---------|:-----------------------------------|
+| `cnpj`    | `String` | Cnpj da empresa a ser gravado   |
+| `email`   | `String` | E-mail da empresa a ser gravado |
+| `nome`   | `String` | Nome da empresa a ser gravado  |
+| `situacao` | `String` | Situacao da empresa a ser gravado  |
+
+#### Excluir empresa (delete)
+
+```http
+  DELETE /empresas/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                     |
+|:----------|:-------|:----------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da empresa a ser excluído |
+
+
+## Link para o vídeo explicativo da solução 
+https://youtu.be/yR397qCfDAc
