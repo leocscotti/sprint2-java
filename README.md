@@ -1,24 +1,36 @@
 ﻿# VisionaryAI
- Projeto para o challenge
+ Projeto para o challenge da FIAP, que consiste em criar uma IA generativa que faz previsão de tendências do mercado de TI e vender esses serviços para empresas.
+
+## Link do repositório
+ https://github.com/leocscotti/sprint2-java
 
 ## Integrantes
 
 Leonardo Cordeiro Scotti- RM550769
+
 Responsável por desenvolver aplicação backend em c# e java
 
 Gabriel de Andrade Baltazar- RM550870
+
 Responsável por desenvolver o banco de dados e o script da IA usando Machine Learning
 
 Enzo Ross Gallone- RM551754
+
 Responsável por desenvolver a aplicação em mobile
 
 Vinicius de Araujo Camargo- RM99494
+
 Responsável por desenvolver os serviços de devops e Cloud computing
 
 Pedro Gomes Fernandes- RM551480
+
 Responsável pela arquitetura do projeto em Compliance e Governança
 
-## Diagrama de entidades de relacionamento 
+## Diagrama de classes
+![image](https://github.com/leocscotti/sprint2-java/assets/126523762/4d1b7ed4-e765-426e-91e6-66bce2397556)
+
+
+## Diagrama de entidades relacional
 ![image](https://github.com/leocscotti/sprint2-java/assets/126523762/0372450b-8d7d-4ce2-8622-a5a997f231b0)
 
 ## Como rodar a aplicação
