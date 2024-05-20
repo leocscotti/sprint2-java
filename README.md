@@ -6,23 +6,23 @@
 
 ## Integrantes
 
-Leonardo Cordeiro Scotti- RM550769
+### Leonardo Cordeiro Scotti- RM550769
 
 Responsável por desenvolver aplicação backend em c# e java
 
-Gabriel de Andrade Baltazar- RM550870
+### Gabriel de Andrade Baltazar- RM550870
 
 Responsável por desenvolver o banco de dados e o script da IA usando Machine Learning
 
-Enzo Ross Gallone- RM551754
+### Enzo Ross Gallone- RM551754
 
 Responsável por desenvolver a aplicação em mobile
 
-Vinicius de Araujo Camargo- RM99494
+### Vinicius de Araujo Camargo- RM99494
 
 Responsável por desenvolver os serviços de devops e Cloud computing
 
-Pedro Gomes Fernandes- RM551480
+### Pedro Gomes Fernandes- RM551480
 
 Responsável pela arquitetura do projeto em Compliance e Governança
 
